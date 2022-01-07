@@ -13,6 +13,18 @@
 		8BD3612627828FEE0075DDCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3611427828FEE0075DDCB /* ContentView.swift */; };
 		8BD3612727828FEE0075DDCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BD3611527828FEE0075DDCB /* Assets.xcassets */; };
 		8BD3612827828FEE0075DDCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BD3611527828FEE0075DDCB /* Assets.xcassets */; };
+		8BD361322782901F0075DDCB /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD361312782901F0075DDCB /* Helpers.swift */; };
+		8BD361332782901F0075DDCB /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD361312782901F0075DDCB /* Helpers.swift */; };
+		8BD36135278293270075DDCB /* Rope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD36134278293270075DDCB /* Rope.swift */; };
+		8BD36136278293270075DDCB /* Rope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD36134278293270075DDCB /* Rope.swift */; };
+		8BD36139278294780075DDCB /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD36138278294780075DDCB /* Node.swift */; };
+		8BD3613A278294780075DDCB /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD36138278294780075DDCB /* Node.swift */; };
+		8BD3613C278294850075DDCB /* Stick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3613B278294850075DDCB /* Stick.swift */; };
+		8BD3613D278294850075DDCB /* Stick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3613B278294850075DDCB /* Stick.swift */; };
+		8BD36140278298BD0075DDCB /* StickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3613F278298BD0075DDCB /* StickView.swift */; };
+		8BD36141278298BD0075DDCB /* StickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD3613F278298BD0075DDCB /* StickView.swift */; };
+		8BD36143278298C30075DDCB /* NodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD36142278298C30075DDCB /* NodeView.swift */; };
+		8BD36144278298C30075DDCB /* NodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD36142278298C30075DDCB /* NodeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +34,12 @@
 		8BD3611A27828FEE0075DDCB /* DangleRope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DangleRope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD3612027828FEE0075DDCB /* DangleRope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DangleRope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD3612227828FEE0075DDCB /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		8BD361312782901F0075DDCB /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		8BD36134278293270075DDCB /* Rope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rope.swift; sourceTree = "<group>"; };
+		8BD36138278294780075DDCB /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		8BD3613B278294850075DDCB /* Stick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stick.swift; sourceTree = "<group>"; };
+		8BD3613F278298BD0075DDCB /* StickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickView.swift; sourceTree = "<group>"; };
+		8BD36142278298C30075DDCB /* NodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +72,11 @@
 		8BD3611227828FEE0075DDCB /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				8BD3613E278298B10075DDCB /* views */,
+				8BD361372782932F0075DDCB /* model */,
 				8BD3611327828FEE0075DDCB /* DangleRopeApp.swift */,
-				8BD3611427828FEE0075DDCB /* ContentView.swift */,
 				8BD3611527828FEE0075DDCB /* Assets.xcassets */,
+				8BD361312782901F0075DDCB /* Helpers.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -76,6 +96,26 @@
 				8BD3612227828FEE0075DDCB /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		8BD361372782932F0075DDCB /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8BD36134278293270075DDCB /* Rope.swift */,
+				8BD36138278294780075DDCB /* Node.swift */,
+				8BD3613B278294850075DDCB /* Stick.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		8BD3613E278298B10075DDCB /* views */ = {
+			isa = PBXGroup;
+			children = (
+				8BD3611427828FEE0075DDCB /* ContentView.swift */,
+				8BD3613F278298BD0075DDCB /* StickView.swift */,
+				8BD36142278298C30075DDCB /* NodeView.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,8 +216,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BD3613C278294850075DDCB /* Stick.swift in Sources */,
 				8BD3612527828FEE0075DDCB /* ContentView.swift in Sources */,
+				8BD36143278298C30075DDCB /* NodeView.swift in Sources */,
+				8BD36139278294780075DDCB /* Node.swift in Sources */,
+				8BD36140278298BD0075DDCB /* StickView.swift in Sources */,
+				8BD361322782901F0075DDCB /* Helpers.swift in Sources */,
 				8BD3612327828FEE0075DDCB /* DangleRopeApp.swift in Sources */,
+				8BD36135278293270075DDCB /* Rope.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,8 +231,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BD3613D278294850075DDCB /* Stick.swift in Sources */,
 				8BD3612627828FEE0075DDCB /* ContentView.swift in Sources */,
+				8BD36144278298C30075DDCB /* NodeView.swift in Sources */,
+				8BD3613A278294780075DDCB /* Node.swift in Sources */,
+				8BD36141278298BD0075DDCB /* StickView.swift in Sources */,
+				8BD361332782901F0075DDCB /* Helpers.swift in Sources */,
 				8BD3612427828FEE0075DDCB /* DangleRopeApp.swift in Sources */,
+				8BD36136278293270075DDCB /* Rope.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
